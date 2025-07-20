@@ -5,6 +5,11 @@ from discord import app_commands
 from discord.ext import commands
 from yt_dlp import YoutubeDL
 from youtubesearchpython import VideosSearch
+from dotenv import load_dotenv
+import os
+
+# Wczytaj zmienne środowiskowe z pliku .env
+load_dotenv()
 
 # --- Flask keep-alive server ---
 app = Flask(__name__)
@@ -123,4 +128,4 @@ async def on_ready():
 
 if __name__ == "__main__":
     threading.Thread(target=run_flask, daemon=True).start()
-    bot.run('MTM5NjQ5MTQzNTY4MjgyODQ5MQ.GIqhTZ.yxAxC6jeRNL4Cuj8nX6GtFM4m2go9Tm9nXuVI4')
+    bot.run(os.environ["DISCORD_TOKEN"])
