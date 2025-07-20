@@ -123,4 +123,4 @@ async def on_ready():
 
 if __name__ == "__main__":
     threading.Thread(target=run_flask, daemon=True).start()
-    bot.run('TWÓJ_TOKEN_DISCORDA')
+    bot.run('MTM5NjQ5MTQzNTY4MjgyODQ5MQ.GIqhTZ.yxAxC6jeRNL4Cuj8nX6GtFM4m2go9Tm9nXuVI4')
