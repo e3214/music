@@ -1,0 +1,6 @@
+  discord.py
+  yt-dlp
+  youtube-search-python
+  Flask
+  httpx==0.26.0
+  PyNaCl
